@@ -7,9 +7,9 @@ const Maincontainer = () => {
     const movies = useSelector(store => store.movies?.nowplayingmovies);
     if(!movies) return; // early return if we dont use this we will face error because movies[0] will first access null value 
 
-    const {overview,original_title,id} = movies[1];
+    const {overview,original_title,id} = movies[2];
     
-    const mainmovie = movies[1];
+    const mainmovie = movies[2];
     console.log(mainmovie);
 
 
